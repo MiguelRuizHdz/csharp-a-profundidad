@@ -8,6 +8,9 @@ namespace TiposDatos
 {
     internal class Program
     {
+        // cuando declaras variables en la clase se convierten en propiedades
+        // Las propiedades deben ser tipadas
+        int number = 1000;
         static void Main(string[] args)
         {
             sbyte datoSbyte = -127;
@@ -28,8 +31,18 @@ namespace TiposDatos
 
             string nombre = "Miguel";
 
+            // declaración de variables
+            // es universal, no necesita tipo
+            // al momento de ejecutar es cuando se le asigna un tipo de dato
+            // al ser universales solo estan permitidas dentro de los objetos
+            var variable = 3618;
+
+
             Console.WriteLine(monto);
-            Console.WriteLine("Tipos de Datos: " + total.GetType());
+            // instancia del objeto Program y se encapsula en la variable prog
+            Program prog = new Program();
+            // accedemos a la propiedad number
+            Console.WriteLine("Tipos de Datos: " + prog.number.GetType());
             Console.ReadKey();
         }
     }
