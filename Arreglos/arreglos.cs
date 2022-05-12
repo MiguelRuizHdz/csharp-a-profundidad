@@ -64,7 +64,24 @@ namespace ArreglosLearn
             // Devuelve el índice que el elemento ocupa dentro del arreglo, o -1 en caso de que no exista. Su sintaxis es:
             // int index = Array.IndexOf(arreglo, valorBuscar);
             int index = Array.IndexOf(numeros, 3);
+            int lastIndex = Array.LastIndexOf(numeros, 3);
             Console.WriteLine(index);
+
+            int primerNumeroMenorEncontrado = Array.Find(numeros, numero => numero < 10);
+            int ultimoNumeroMenorEncontrado = Array.FindLast(numeros, numero => numero < 10);
+            int primerIndexEncontrado = Array.FindIndex(numeros, numero => numero < 10);
+            int ultimoIndexEncontrado = Array.FindLastIndex(numeros, numero => numero < 10);
+            int[] numerosMenores = Array.FindAll(numeros, numero => numero < 100);
+
+            Console.WriteLine("Numeros menores a 100");
+            
+            foreach (int n in numerosMenores)
+            {
+                Console.WriteLine(n);
+            }
+
+
+            Console.WriteLine("Conteo de números: {0}", numeros.Count());
 
             Console.ReadKey();
 
