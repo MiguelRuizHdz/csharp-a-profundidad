@@ -11,6 +11,8 @@ namespace TiposDatos
         // cuando declaras variables en la clase se convierten en propiedades
         // Las propiedades deben ser tipadas
         int number = 1000;
+        static int edad = 21;
+
         static void Main(string[] args)
         {
             sbyte datoSbyte = -127;
@@ -43,6 +45,11 @@ namespace TiposDatos
             Program prog = new Program();
             // accedemos a la propiedad number
             Console.WriteLine("Tipos de Datos: " + prog.number.GetType());
+
+            // Podemos llamar al atributo edad, ya que al ser una propiedad estatica se puede llamar directamente sin necesidad de instanciarla
+            // Console.WriteLine("El valor es: " + Program.edad);
+            Console.WriteLine("El valor es: " + edad);
+            
             Console.ReadKey();
         }
     }
