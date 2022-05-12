@@ -1,5 +1,7 @@
 # CLR
 
+![CLR: Common Language Runtime](CLR.png "CLR")
+
 ## CLR: Common Language Runtime
 
 Es el núcleo del framework, es el que compila el código C#.
