@@ -37,8 +37,14 @@ namespace TiposDatos
             // es universal, no necesita tipo
             // al momento de ejecutar es cuando se le asigna un tipo de dato
             // al ser universales solo estan permitidas dentro de los objetos
+            // siempre se le debe asignar un valor
+            // no se le puede reasignar otro tipo de dato al momento de sobreescribir est avariable
             var variable = 3618;
 
+            // podemos declararlo sin asignarle ningun tipo de valor
+            // podemos cambiarlo de tipo de dato
+            dynamic apellido;
+            apellido = true;
 
             Console.WriteLine(monto);
             // instancia del objeto Program y se encapsula en la variable prog
