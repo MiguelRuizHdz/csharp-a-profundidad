@@ -1,0 +1,7 @@
+**.exe
+gitignore
+
+**/obj
+**/bin
+
+**.vs
