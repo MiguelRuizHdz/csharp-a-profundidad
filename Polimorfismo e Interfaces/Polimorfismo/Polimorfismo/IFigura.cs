@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Polimorfismo
 {
-    internal interface IFigura
+    interface IFigura
     {
+        double CalcularArea();
     }
 }
