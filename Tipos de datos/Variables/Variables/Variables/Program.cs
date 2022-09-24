@@ -40,7 +40,6 @@ namespace Variables
 
             Console.WriteLine(saludo.ToUpper());   // HOLA
             Console.WriteLine(saludo.ToLower());   // hola
-                                       // Espera a que presionemos una tecla. Se cerrará automaticamente sino agregamos la siguiente línea
 
             string apellido = "Rivera";
             string nombreCompleto = $"Mi nombre completo es {nombre} {apellido}";
@@ -48,7 +47,8 @@ namespace Variables
 
 
             string texto = "La siguiente \"palabra\" está entre comillas dobles";
-            // La siguiente "palabra" está entre comillas dobles
+                        // La siguiente "palabra" está entre comillas dobles
+            // Espera a que presionemos una tecla. Se cerrará automaticamente sino agregamos la siguiente línea
             Console.ReadKey();
         }
     }
